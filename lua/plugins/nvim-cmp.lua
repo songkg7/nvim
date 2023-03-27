@@ -93,16 +93,16 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.scroll_docs(-2),
     ['<C-y>'] = cmp.mapping.scroll_docs(2),
     ['<C-Space>'] = cmp.mapping.complete(),
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })
-        return
-      end
-
-      fallback()
-      -- available options
-      -- vim.call('UltiSnips#CanJumpForwards') == 1
-    end, { 'i' }),
+    -- ['<Tab>'] = cmp.mapping(function(fallback)
+    --   if cmp.visible() then
+    --     cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })
+    --     return
+    --   end
+    --
+    --   fallback()
+    --   -- available options
+    --   -- vim.call('UltiSnips#CanJumpForwards') == 1
+    -- end, { 'i' }),
     ['<CR>'] = cmp.mapping(function(fallback)
       if cmp.get_active_entry() then
         cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace })
