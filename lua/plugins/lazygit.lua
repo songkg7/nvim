@@ -14,4 +14,4 @@ vim.g.lazygit_floating_window_use_plenary = 0
 vim.g.lazygit_use_neovim_remote = 1
 
 -- setup mapping to call :LazyGit
-vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', {silent = true})
+vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', {silent = true})
