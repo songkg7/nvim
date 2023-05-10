@@ -7,7 +7,10 @@ copilot.setup({
     enabled = true,
     auto_trigger = true,
     debounce = 75,
-  }
+  },
+  filetypes = {
+    yaml = true,
+  },
 })
 
 local silent_noremap = { silent = true, noremap = true }
@@ -44,3 +47,4 @@ util.imap('<C-\\>', function()
     vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<C-\\>', true, true, true), 'n')
   end
 end, silent_noremap)
+
