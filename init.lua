@@ -11,3 +11,5 @@ require('preferences')
 require('keymaps')
 require('styles')
 
+vim.g.python3_host_prog = '/Users/harilsong/.asdf/shims/python3'
+
