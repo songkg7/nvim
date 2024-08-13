@@ -4,7 +4,7 @@ local profile = require('profile')
 vim.g.mapleader = ' '
 vim.o.undofile = true
 vim.o.encoding = 'UTF-8'
-vim.o.tenc = 'UTF-8' -- terminal's encoding
+-- vim.o.tenc = 'UTF-8' -- terminal's encoding
 
 vim.o.foldmethod = 'indent'
 vim.o.foldlevel = 99
